@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".StudentList">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@color/cardview_dark_background"
+            android:id="@+id/date_picker"
+            android:text="@string/pick_the_date"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:background="@color/cardview_dark_background"
+            android:textColor="@color/colorAccent"
+            android:text="@string/done"
+            android:layout_weight="1"
+            android:id="@+id/done_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_below="@+id/lin"
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/student_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
